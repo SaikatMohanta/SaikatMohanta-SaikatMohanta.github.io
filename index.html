@@ -4,64 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CosmiKodes | Embedded AI & ML Consulting</title>
-  <meta name="description" content="Embedded AI, Edge ML, LLM deployment, and software consulting services." />
+  <meta name="description" content="Embedded AI, Edge ML, LLM systems, and software consulting services." />
+  <link rel="icon" href="assets/logo.png" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0b0f1a; color: #eaeaea; }
-    header { padding: 60px 20px; text-align: center; background: linear-gradient(135deg,#111,#1b1f3b); }
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    h2 { color: #7dd3fc; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    .card { background:#11162a; padding:20px; margin:15px 0; border-radius:10px; }
-    footer { text-align:center; padding:30px; background:#050712; font-size:0.9rem; }
+    body { margin:0; font-family:system-ui, sans-serif; background:#0b0f1a; color:#eaeaea; }
+    header { padding:80px 20px; text-align:center; background:linear-gradient(135deg,#0f172a,#020617); }
+    section { max-width:1100px; margin:auto; padding:70px 20px; }
+    h1 { font-size:2.8rem; margin-bottom:10px; }
+    h2 { color:#7dd3fc; margin-bottom:25px; }
+    p { line-height:1.7; }
+    .grid { display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+    .card { background:#111827; border-radius:14px; padding:25px; box-shadow:0 0 0 1px #1e293b; }
+    img.responsive { max-width:100%; border-radius:12px; }
+    footer { background:#020617; text-align:center; padding:35px; font-size:0.9rem; color:#94a3b8; }
     a { color:#7dd3fc; text-decoration:none; }
   </style>
 </head>
 <body>
 
+<!-- PHASE 1: HERO / IDENTITY -->
 <header>
+  <img src="assets/logo.png" alt="CosmiKodes Logo" width="120" />
   <h1>CosmiKodes</h1>
   <p>Embedded AI • Edge ML • LLM Systems • Software Consulting</p>
 </header>
 
+<!-- PHASE 1: ABOUT -->
 <section>
   <h2>What I Do</h2>
-  <div class="card">
-    <p>I provide <strong>software development and IT consulting services</strong> specializing in embedded AI, edge machine learning, transformer-based models, and scalable prototype development.</p>
-    <p>My work focuses on efficient, production-ready implementations across MCU, edge devices, and cloud platforms.</p>
+  <p>
+    I provide <strong>software development and IT consulting services</strong> specializing in embedded AI, edge machine learning, and transformer-based systems.
+    My focus is on efficient, production-ready implementations across microcontrollers, edge devices, and cloud environments.
+  </p>
+</section>
+
+<!-- PHASE 1: SKILLS -->
+<section>
+  <h2>Core Skills & Expertise</h2>
+  <div class="grid">
+    <div class="card">Embedded AI on MCU (TFLite Micro, CMSIS-NN)</div>
+    <div class="card">Edge ML Optimization (Latency, Power, Memory)</div>
+    <div class="card">Transformer / LLM Implementation</div>
+    <div class="card">AI Prototype & Feasibility Validation</div>
   </div>
 </section>
 
-<section>
-  <h2>Core Expertise</h2>
-  <div class="card">Embedded AI on MCUs (TFLite Micro, ONNX, CMSIS-NN)</div>
-  <div class="card">Transformer / LLM fine-tuning and deployment</div>
-  <div class="card">Edge AI optimization (latency, memory, power)</div>
-  <div class="card">Rapid prototyping & feasibility validation</div>
-</section>
-
+<!-- PHASE 2: PROJECTS & DEMONSTRATIONS -->
 <section>
   <h2>Projects & Demonstrations</h2>
-  <div class="card">Offline domain-specific transformer on MCU-class hardware</div>
-  <div class="card">Edge vision pipeline with quantized neural networks</div>
-  <div class="card">FastAPI-based AI inference microservice</div>
+  <div class="grid">
+
+    <!-- PROJECT CARD 1 -->
+    <div class="card">
+      <img src="assets/projects/embedded_ai_demo.png" alt="Embedded AI Demo" class="responsive" />
+      <h3>Embedded AI on Microcontrollers</h3>
+      <p>
+        Designed and deployed lightweight ML inference pipelines on resource-constrained MCUs using TFLite Micro and CMSIS-NN.
+      </p>
+      <p><strong>Constraints:</strong> &lt;256KB RAM, low latency, offline inference</p>
+      <p>
+        <a href="#">GitHub</a> · <a href="#">PDF</a>
+      </p>
+    </div>
+
+    <!-- PROJECT CARD 2 -->
+    <div class="card">
+      <img src="assets/projects/edge_ml_pipeline.gif" alt="Edge ML Pipeline" class="responsive" />
+      <h3>Edge ML Optimization Pipeline</h3>
+      <p>
+        Implemented model optimization workflows including quantization, pruning, and ONNX-based deployment for edge devices.
+      </p>
+      <p><strong>Focus:</strong> Power efficiency, memory reduction</p>
+      <p>
+        <a href="#">GitHub</a> · <a href="#">Video</a>
+      </p>
+    </div>
+
+    <!-- PROJECT CARD 3 -->
+    <div class="card">
+      <img src="assets/projects/transformer_arch.png" alt="Transformer Architecture" class="responsive" />
+      <h3>Transformer & LLM Systems</h3>
+      <p>
+        Built and fine-tuned transformer-based models for domain-specific NLP tasks, including offline-capable inference.
+      </p>
+      <p><strong>Stack:</strong> PyTorch, Hugging Face, custom tokenizers</p>
+      <p>
+        <a href="#">GitHub</a> · <a href="#">PDF</a>
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <section>
-  <h2>Open Source & Community</h2>
-  <div class="card">
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>YouTube: <a href="https://youtube.com/@CosmiKodes" target="_blank">CosmiKodes</a></p>
-    <p>Focus: Embedded AI education, optimization walkthroughs, open-source demos.</p>
-  </div>
+  <h2>Documentation & PDFs</h2>
+  <p>(Next phase: downloadable technical PDFs and reports)</p>
+</section>
+
+<section>
+  <h2>YouTube & Community</h2>
+  <p>
+    YouTube Channel: <a href="https://youtube.com/@CosmiKodes" target="_blank">CosmiKodes</a><br/>
+    (Next phase: thumbnails, video embeds, channel description)
+  </p>
 </section>
 
 <section>
   <h2>Work With Me</h2>
-  <div class="card">
-    <p>Available for global consulting, implementation, and prototype development.</p>
-    <p>Primary platform: <strong>Fiverr</strong></p>
-    <p>Email: your@email.com</p>
-  </div>
+  <p>
+    I work with global clients through professional platforms to ensure secure payments,
+    clear scope definition, and transparent project execution.
+  </p>
 </section>
 
 <footer>
