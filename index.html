@@ -63,33 +63,37 @@
             <img src="assets/projects/GW2.png" alt="GW-Alert" class="responsive" />
       </p>
       
-        CitizenGW-Compute is an open science initiative that reimagines your computer’s raw processing power as a virtual gravitational wave antenna. 
+        <p> CitizenGW-Compute is an open science initiative that reimagines your computer’s raw processing power as a virtual gravitational wave antenna. 
         Instead of trying to detect tiny clock shifts directly (impossible at ~$10^{-21}$ strains), we treat the total number of operations per second as an 
         amplification channel. By scaling tiny spacetime ripples into measurable deviations in throughput, everyday CPUs, GPUs, and even supercomputers can 
-        join in the hunt for gravitational waves.
+        join in the hunt for gravitational waves. </p>
       
              
-        <p><strong>Features:</strong> 
+        <p>
+          <strong>Features: </strong> 
         - Deterministic Dummy ANN-like benchmark using NumPy/PyTorch. 
         - Event-triggered "logging mode" on GW alerts. 
         - Local CSV/JSON logging of performance metrics. 
         - Optional upload to a central Flask-based server. -Designed for Windows/Linux/MacOS (Python 3.8+).
         </p>
           
-        <p><strong>Roadmap:</strong> &lt;
+        <p>
+          <strong>Roadmap: </strong> 
         - Real-time integration with LIGO/Virgo alert API.
         - Advanced ML-based anomaly correlation.
         - Visualization dashboards for citizen contributors.
         - Multi-user distributed logging network.
         </p>
 
-       <p><strong>Usage:</strong> &lt;
+       <p>
+         <strong>Usage: </strong>
         Run the client, listening for GW alerts and switching to logging mode :=
         python client.py --server http://127.0.0.1:5000/upload --alert-endpoint https://gwosc.org/api/
         Below is example on how to fetch data from our API in python languages.        
         If a GW alert is detected, you’ll be prompted: GW ALERT received! Switch system to logging mode? (y/n):
         Server Start the minimal Flask server to collect logs: python server_stub.py
-        View logs in browser: http://127.0.0.1:5000/logs          
+        View logs in browser: http://127.0.0.1:5000/logs  
+        </p>
        
       <p>
         <a href="https://github.com/SaikatMohanta/CitizenGW-Compute" target="_blank">Visit GitHub Repo For More Details</a>
@@ -260,6 +264,7 @@
 
 </body>
 </html>
+
 
 
 
